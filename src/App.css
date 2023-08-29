@@ -81,8 +81,8 @@ body{
   
   .calci-grid{
     padding: 20% 0;
-    grid-template-columns: repeat(4, 3.5rem);
-    grid-template-rows: minmax(5rem, auto) repeat(5, 3rem);    
+    grid-template-columns: repeat(4, 5rem);
+    grid-template-rows: minmax(6rem, auto) repeat(5, 4rem);    
   }
   .calci-grid > button{
     border: 3px solid #272727;
@@ -98,5 +98,34 @@ body{
   }
   .output{
     border-radius: 15px;
+  }
+  #del{
+    text-align: center;
+  }
+}
+@media screen and (max-width: 330px) {
+  
+  .calci-grid{
+    padding: 20% 0;
+    grid-template-columns: repeat(4, 4rem);
+    grid-template-rows: minmax(6rem, auto) repeat(5, 3.5rem);    
+  }
+  .calci-grid > button{
+    border: 3px solid #272727;
+    border-radius: 15px;
+    font-size: 18px;
+  }
+  .output .previous-operand{
+    font-size: 1rem;
+  }
+  
+  .output .current-operand{
+    font-size: 1.5rem;
+  }
+  .output{
+    border-radius: 15px;
+  }
+  #del{
+    text-align: center;
   }
 }
