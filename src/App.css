@@ -47,7 +47,7 @@ body{
 .calci-grid > button{
   cursor: pointer;
   font-size: 2rem;
-  border: 1px solid #272727;
+  border: 3px solid #272727;
   outline: none;
   background-color: #fff;
   border-radius: 25px;
@@ -75,4 +75,28 @@ body{
 #del:hover{
   background-color: #ff2323;
   color: #fff;
+}
+
+@media screen and (max-width: 410px) {
+  
+  .calci-grid{
+    padding: 20% 0;
+    grid-template-columns: repeat(4, 3.5rem);
+    grid-template-rows: minmax(5rem, auto) repeat(5, 3rem);    
+  }
+  .calci-grid > button{
+    border: 3px solid #272727;
+    border-radius: 15px;
+    font-size: 18px;
+  }
+  .output .previous-operand{
+    font-size: 1rem;
+  }
+  
+  .output .current-operand{
+    font-size: 1.5rem;
+  }
+  .output{
+    border-radius: 15px;
+  }
 }
